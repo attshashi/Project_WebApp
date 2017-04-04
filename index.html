@@ -83,15 +83,8 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 </script>	
 </head>
 <body>
-	<div class="header">
+	<div class="header" style="height: 60px">
 		<div class="container">
-			<div class="w3l_header_left"> 
-				<ul>
-					<li><span class="glyphicon glyphicon-earphone" aria-hidden="true"></span>+ (123) 111 222 333</li>
-					<li><span class="glyphicon glyphicon-envelope" aria-hidden="true"></span><a href="mailto:info@example.com">info@example.com</a></li>
-				</ul>
-			</div>
-			
 			<div class="w3l_header_right">
 				<ul>
 					<li><a class="book popup-with-zoom-anim button-isi zoomIn animated" data-wow-delay=".5s" href="#small-dialog"><span class="glyphicon glyphicon-user" aria-hidden="true"></span>Sign In</a></li>
@@ -120,12 +113,12 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 				</div>
 				<div class="navbar-collapse agileits w3layouts collapse hover-effect" id="navbar">
 					<ul class="agileits w3layouts">
-						<li class="agileits w3layouts"><a href="#" class="active">Home</a></li>
-						<li class="agileits w3layouts"><a class="scroll" href="#about">About</a></li>
-						<li class="agileits w3layouts"><a class="scroll" href="#team">Team</a></li>
-						<li class="agileits w3layouts"><a class="scroll" href="#services">Services</a></li>
-						<li class="agileits w3layouts"><a class="scroll" href="#gallery">Gallery</a></li>
-						<li class="agileits w3layouts"><a class="scroll" href="#contact">Contact</a></li>
+						<li class="agileits w3layouts active"><a href="#banner" class="" data-toggle="tab">Home</a></li>
+						<li class="agileits w3layouts"><a class="scroll" href="#about" data-toggle="tab">About</a></li>
+						<li class="agileits w3layouts"><a class="scroll" href="#team" data-toggle="tab">Team</a></li>
+						<li class="agileits w3layouts"><a class="scroll" href="#services" data-toggle="tab">Services</a></li>
+						<li class="agileits w3layouts"><a class="scroll" href="#gallery" data-toggle="tab">Gallery</a></li>
+						<li class="agileits w3layouts"><a class="scroll" href="#contact" data-toggle="tab">Contact</a></li>
 					</ul>
 				</div>
 			</nav>
@@ -134,16 +127,18 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 		</div>
 	</div>
 
-	<div class="banner">
+	<div class="tab-content">
+	<div class="banner tab-pane fade in active"  id="banner">
 		<h3>Teach students how</h3>
 		<h2><span>To </span>learn</h2>
 		<h4>Our goal is to transform them</h4>
 		<div class="arrow">
-			<a href="#contact" class="scroll"><img src="images/arrow.png" alt=" " /></a>
+			<a href="#contact" class="scroll" data-toggle="tab"><img src="images/arrow.png" alt=" " /></a>
 		</div>
 	</div>
 	<!-- about -->
-	<div class="about-w3-agile" id="about">
+
+	<div class="about-w3-agile tab-pane fade" id="about">
 		<div class="container">
 			<div class="wthree_about_grids">
 				<div class="col-md-6 wthree_about_grid_left">
@@ -179,7 +174,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 		</div>
 	</div>
 <!-- //about -->
-	<div class="featured-work">
+	<div class="featured-work tab-pane fade">
 		<div class="container">
 			<h3>Featured work</h3>
 			<div class="col-md-6 featured-left">
@@ -218,11 +213,11 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 			</div>
 		</div>
 	</div>
-	<div class="feat-bottom">
+	<div class="feat-bottom tab-pane fade">
 		<h4>THE PURPOSE OF EDUCATION IS TO MAKE MINDS NOT CAREERS</h4>
 	</div>
 	<!-- team -->
-	<div class="team" id="team">
+	<div class="team tab-pane fade" id="team">
 		<div class="container">
 			<h3>Meet Our Team</h3>
 			<div class="agile_team_grids">
@@ -299,7 +294,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 		</div>
 	</div>
 <!-- //team -->
-	<div class="services" id="services">
+	<div class="services tab-pane fade" id="services">
 		<div class="container">
 			<h3>Our services</h3>
 			<div class="col-md-4 services-grids services-grids1">
@@ -321,7 +316,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 		</div>
 	</div>
 	<!-- Gallery -->
-	<div class="gallery" id="gallery">
+	<div class="gallery tab-pane fade" id="gallery">
 		<div class="container">
 			<h3>GALLERY</h3>
 			<div class="gallery-grids">
@@ -445,7 +440,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 	</div>
 	<!-- //Gallery -->
 
-	<div class="contact-w3-agileits" id="contact">
+	<div class="contact-w3-agileits tab-pane fade" id="contact">
 		<div class="container">
 			<div class="col-md-5 contact-left-w3ls">
 				<h3>Contact info</h3>
@@ -506,6 +501,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 	</div>
 	<div class="footer-w3l">
 		<p> &copy; 2017 Inspire . All Rights Reserved | Design by <a href="http://w3layouts.com">W3layouts</a></p>
+	</div>
 	</div>
 <div class="pop-up"> 
 	<div id="small-dialog" class="mfp-hide book-form">

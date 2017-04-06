@@ -1,9 +1,6 @@
-<!--A Design by W3layouts
-Author: W3layout
-Author URL: http://w3layouts.com
-License: Creative Commons Attribution 3.0 Unported
-License URL: http://creativecommons.org/licenses/by/3.0/
--->
+<?php
+session_start();
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -87,8 +84,20 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 		<div class="container">
 			<div class="w3l_header_right">
 				<ul>
-					<li><a class="book popup-with-zoom-anim button-isi zoomIn animated" data-wow-delay=".5s" href="#small-dialog"><span class="glyphicon glyphicon-user" aria-hidden="true"></span>Sign In</a></li>
-					<li><a class="book popup-with-zoom-anim button-isi zoomIn animated" data-wow-delay=".5s" href="#small-dialog2"><span class="glyphicon glyphicon-user" aria-hidden="true"></span>Sign Up</a></li>
+                    <?php
+                    if(!isset($_SESSION["type_user"]))
+                    {
+                        ?>
+                        <li><a class="book popup-with-zoom-anim button-isi zoomIn animated" data-wow-delay=".5s" href="#small-dialog"><span class="glyphicon glyphicon-user" aria-hidden="true"></span>Sign In</a></li>
+                        <li><a class="book popup-with-zoom-anim button-isi zoomIn animated" data-wow-delay=".5s" href="#small-dialog2"><span class="glyphicon glyphicon-user" aria-hidden="true"></span>Sign Up</a></li>
+                        <?php
+                    }
+                    else {
+                        ?>
+                        <li><a href="controller/homepage.php?logout=<?php echo "logout" ?>"><span class="glyphicon glyphicon-user" aria-hidden="true"></span>Log Out</a></li>
+                        <?php
+                    }
+                    ?>
 				</ul>
 			</div>
 			
@@ -506,9 +515,9 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 <div class="pop-up"> 
 	<div id="small-dialog" class="mfp-hide book-form">
 		<h3>Sign In </h3>
-			<form action="#" method="post">
-				<input type="text" name="Email" class="email" placeholder="Email" required=""/>
-				<input type="password" name="Password" class="password" placeholder="Password" required=""/>	
+			<form action="controller/homepage.php" method="post">
+				<input type="text" name="username" class="email" placeholder="Username" required=""/>
+				<input type="password" name="password" class="password" placeholder="Password" required=""/>
 				<ul>
 				<li>
 					<input type="checkbox" id="brand1" value="">
@@ -517,7 +526,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 			</ul>
             <a href="#">Forgot Password?</a><br>
 			<div class="clearfix"></div>
-				<input type="submit" value="Sign In">
+				<input type="submit" value="Sign In" name="chklogin">
 			</form>
 	</div>
 </div>
@@ -531,7 +540,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 				<input type="password" name="Password" class="password" placeholder="Confirm Password" required=""/>
 				<input type="submit" value="Sign Up">
 			</form>
-	</div>
-</div>	
+    </div>
+</div>
 </body>
 </html>

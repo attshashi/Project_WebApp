@@ -123,7 +123,7 @@ input[type="submit"],.header_left ul li a,.agile_back_home a,.agileits_social h5
 .w3l_header_right ul {
     padding: .7em 0 0;
 }
-#small-dialog h3,#small-dialog2 h3 {
+#small-dialog h3,#small-dialog2 h3{
     color: #000;
     font-size: 30px;
 	margin-bottom:30px;
@@ -183,11 +183,11 @@ form a {
 	font-size: 13px;
 
 }
-#small-dialog, #small-dialog2 {
+#small-dialog, #small-dialog2{
 	background:#00bcd4;
 	padding:50px;
 }
-#small-dialog input[type="submit"], #small-dialog2 input[type="submit"] {
+#small-dialog input[type="submit"], #small-dialog2 input[type="submit"]{
 	background:#000;
 	border:none;
 	padding:10px 15px;
@@ -197,7 +197,7 @@ form a {
 	margin-top:30px;
 	width:100%;
 }
-#small-dialog input[type="submit"]:hover, #small-dialog2 input[type="submit"]:hover {
+#small-dialog input[type="submit"]:hover, #small-dialog2 input[type="submit"]:hover{
 	background: #46c3ff;
 }
 #small-dialog a:hover{

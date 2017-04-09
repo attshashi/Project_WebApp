@@ -108,7 +108,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 	<div class="logo-navigation-w3layouts">
 		<div class="container">
 		<div class="logo-w3">
-			<a href="#"><h1><img src="images/logo.png" alt=" " /><span>Inspire</span></h1></a>
+			<a href="#"><h1><img src="images/eng.png" alt=" " /><span>Lab CPE</span></h1></a>
 		</div>
 		<div class="navigation agileits w3layouts">
 			<nav class="navbar agileits w3layouts navbar-default">
@@ -122,12 +122,52 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 				</div>
 				<div class="navbar-collapse agileits w3layouts collapse hover-effect" id="navbar">
 					<ul class="agileits w3layouts">
-						<li class="agileits w3layouts active"><a href="#banner" data-toggle="tab">Home</a></li>
-						<li class="agileits w3layouts"><a class="scroll" href="#about" data-toggle="tab">About</a></li>
-						<li class="agileits w3layouts"><a class="scroll" href="#team" data-toggle="tab">Team</a></li>
-						<li class="agileits w3layouts"><a class="scroll" href="#services" data-toggle="tab">Services</a></li>
+                        <?php if(isset($_SESSION["type_user"])){ ?>
+						<li class="agileits w3layouts active"><a href="#banner" data-toggle="tab">หน้าแรก</a></li>
+						<li class="agileits w3layouts">
+                            <a class="scroll" href="#about" data-toggle="tab">
+                                <?php
+                                    if($_SESSION["type_user"] == "admin") {
+                                        echo "จัดการผู้ใช้";
+                                    }
+                                    else {
+                                        echo "แก้ไขข้อมูลส่วนตัว";
+                                    }
+                                ?>
+                            </a>
+                        </li>
+						<li class="agileits w3layouts">
+                            <a class="scroll" href="#team" data-toggle="tab">
+                                <?php
+                                if($_SESSION["type_user"] == "admin") {
+                                    echo "Upload";
+                                }
+                                else {
+                                    echo "Upload งานตัวเอง";
+                                }
+                                ?>
+                            </a>
+                        </li>
+						<li class="agileits w3layouts">
+                            <a class="scroll" href="#services" data-toggle="tab">
+                                <?php
+                                if($_SESSION["type_user"] == "admin") {
+                                    echo "จัดการไฟล์";
+                                }
+                                else {
+                                    echo "ดูไฟล์ตนเอง";
+                                }
+                                ?>
+                            </a>
+                        </li>
 						<li class="agileits w3layouts"><a class="scroll" href="#gallery" data-toggle="tab">Gallery</a></li>
 						<li class="agileits w3layouts"><a class="scroll" href="#contact" data-toggle="tab">Contact</a></li>
+                        <?php }else { ?>
+                            <li class="agileits w3layouts active"><a href="#banner" data-toggle="tab">หน้าแรก</a></li>
+                            <li class="agileits w3layouts"><a class="scroll" href="#gallery" data-toggle="tab">รวมรูปภาพ</a></li>
+                            <li class="agileits w3layouts"><a class="scroll" href="#services" data-toggle="tab">รวมผลงาน</a></li>
+                            <li class="agileits w3layouts"><a class="scroll" href="#contact" data-toggle="tab">Contact</a></li>
+                        <?php } ?>
 					</ul>
 				</div>
 			</nav>
@@ -145,86 +185,52 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 			<a href="#contact" class="scroll" data-toggle="tab"><img src="images/arrow.png" alt=" " /></a>
 		</div>
 	</div>
-	<!-- about -->
+	<!-- Member -->
 
 	<div class="about-w3-agile tab-pane fade" id="about">
 		<div class="container">
 			<div class="wthree_about_grids">
-				<div class="col-md-6 wthree_about_grid_left">
-					<h3>About us</h3>
-							<p>Fusce semper, nibh eu sollicitudin imperdiet, dolor magna vestibulum mi, 
-								vel tincidunt augue ipsum nec erat. Vestibulum congue leo elementum 
-								ullamcorper commodo. Class aptent taciti sociosqu ad litora torquent 
-								per conubia nostra, per inceptos himenaeos.</p>
-								<a href="#" data-toggle="modal" data-target="#myModal">Read More</a>
-				</div>
-				<div id="myModal" class="modal fade" role="dialog">
-					<div class="modal-dialog">
-						<div class="modal-content">
-						  <div class="modal-header">
-							<button type="button" class="close" data-dismiss="modal">&times;</button>
-							<h4 class="modal-title">Modal Header</h4>
-						  </div>
-						  <div class="modal-body">
-							<p>Nam tincidunt leo nec molestie accumsan. Fusce iaculis sit amet tellus vel ultrices. Phasellus in tellus ut orci accumsan facilisis eget in ante. Aliquam laoreet finibus augue non pharetra. Nullam tincidunt ex quis massa auctor, quis auctor erat semper. Morbi a justo auctor, semper mi viverra, lacinia libero. Praesent sodales augue tristique tellus eleifend, eu placerat eros hendrerit. Cras imperdiet lorem nec magna congue, blandit auctor arcu posuere. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.</p>
-						  </div>
-						  <div class="modal-footer">
-							<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-						  </div>
-						</div>
-					</div>
-				</div>
+				<div class="wthree_about_grid_left">
+                    <?php
+                    if(isset($_SESSION["type_user"])){
+                        if($_SESSION["type_user"] == "admin") {
+                            ?>
+                            <h3>Member</h3>
+                            <table class="table" style="">
+                                <tr>
+                                    <th width="50px">ID</th>
+                                    <th width="100px">ชื่อ</th>
+                                    <th width="100px">นามสกุล</th>
+                                    <th width="100px">Username</th>
+                                    <th width="100px">Password</th>
+                                    <th width="100px">เบอร์โทรศัพท์</th>
+                                    <th width="120px">E-mail</th>
+                                    <th width="120px">Type User</th>
+                                    <th width="120px">ยืนยันสมาชิก</th>
+                                </tr>
+                                <tr>
+                                    <td>1</td>
+                                    <td>อรรถชัย</td>
+                                    <td>บุญเหล็ง</td>
+                                    <td>user123</td>
+                                    <td>123456</td>
+                                    <td>0858253730</td>
+                                    <td>rap.ab1610@gmail.com</td>
+                                    <td>User</td>
+                                    <td>Access</td>
+                                </tr>
+                            </table>
 
-				<div class="col-md-6 wthree_about_grid_right">
-					<img src="images/11.jpg" alt=" " class="img-responsive" />
+                            <?php
+                        }}
+                    ?>
 				</div>
 				<div class="clearfix"> </div>
 			</div>
 		</div>
 	</div>
 <!-- //about -->
-	<div class="featured-work tab-pane fade">
-		<div class="container">
-			<h3>Featured work</h3>
-			<div class="col-md-6 featured-left">
-				<div class="wmuSlider example1 animated wow slideInUp" data-wow-delay=".5s">
-					<div class="wmuSliderWrapper">
-						<article style="position: absolute; width: 100%; opacity: 0;"> 
-							<div class="banner-wrap">
-								<img src="images/f1.jpg" alt=" " class="img-responsive" />
-							</div>
-						</article>
-						<article style="position: absolute; width: 100%; opacity: 0;"> 
-							<div class="banner-wrap">
-								<img src="images/f2.jpg" alt=" " class="img-responsive" />
-							</div>
-						</article>
-						<article style="position: absolute; width: 100%; opacity: 0;"> 
-							<div class="banner-wrap">
-								<img src="images/f3.jpg" alt=" " class="img-responsive" />
-							</div>
-						</article>
-					</div>
-				</div>
-			</div>
-			<script src="js/jquery.wmuSlider.js"></script> 
-								<script>
-									$('.example1').wmuSlider();         
-								</script> 
 
-			<div class="col-md-6 featured-right">
-				<h4>Quisque lobortis</h4>
-				<p>Nam a leo porta, pulvinar eros id, facilisis nisi. Proin ut blandit tortor, in tempor tellus. Sed lacus metus, hendrerit eu orci ac, aliquam commodo lacus.Morbi gravida pulvinar orci, et consectetur enim consectetur non. Proin nunc leo, tincidunt sed lacinia</p>
-				<p>Fusce eu felis et sapien malesuada pretium a ac eros. Praesent quis hendrerit quam. Integer mollis est a cursus pulvinar. Proin leo neque, posuere eu metus </p>
-				<a href="#" data-toggle="modal" data-target="#myModal">Read More</a>
-			</div>
-			<div class="clearfix">
-			</div>
-		</div>
-	</div>
-	<div class="feat-bottom tab-pane fade">
-		<h4>THE PURPOSE OF EDUCATION IS TO MAKE MINDS NOT CAREERS</h4>
-	</div>
 	<!-- team -->
 	<div class="team tab-pane fade" id="team">
 		<div class="container">
@@ -509,7 +515,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 		</div>
 	</div>
 	<div class="footer-w3l">
-		<p> &copy; 2017 Inspire . All Rights Reserved | Design by <a href="http://w3layouts.com">W3layouts</a></p>
+		<p>Kasetsart University Kamphaeng Saen Campus</p>
 	</div>
 	</div>
 <div class="pop-up"> 

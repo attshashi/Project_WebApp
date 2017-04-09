@@ -66,6 +66,22 @@ input[type="submit"],.header_left ul li a,.agile_back_home a,.agileits_social h5
 	-o-transition: .5s ease-in;
 	-ms-transition: .5s ease-in;
 }
+#loader {
+	position: absolute;
+	left: 50%;
+	top: 50%;
+	z-index: 1;
+	width: 150px;
+	height: 150px;
+	margin: -75px 0 0 -75px;
+	border: 16px solid #f3f3f3;
+	border-radius: 50%;
+	border-top: 16px solid #3498db;
+	width: 120px;
+	height: 120px;
+	-webkit-animation: spin 2s linear infinite;
+	animation: spin 2s linear infinite;
+}
 .header {
     background: #46c3ff;
 }
@@ -1566,7 +1582,7 @@ figure.effect-apollo:hover figcaption::before {
 	}
 	.wthree_about_grid_left, .wthree_about_grid_right {
 		width: 100%;
-		float: left;
+
 	}
 	.about-w3-agile h3:before {
 		width: 25%;

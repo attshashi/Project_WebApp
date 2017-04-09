@@ -10,11 +10,11 @@ if(isset($_POST["chklogin"])){
     $chklogin = new Authentication($username,$password);
     if(isset($chklogin)){
         $_SESSION["type_user"] = $chklogin->getTypeUser();
-        echo'<script>window.location="../index.php";</script>';
+        header("location:../index.php");
     }
     else{
         $_SESSION["type_user"] = "";
-        echo'<script>window.location="../index.php";</script>';
+        header("location:../index.php");
     }
 }
 if(isset($_GET["logout"])){

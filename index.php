@@ -1,4 +1,4 @@
-<?php//535656565656bfhfhfdfhgtjfhgfhggfngvfhthtjt2222
+<?php//่หกีเด้หกา่ด้าห้ด้่้กดา่้หา่กเด้หสฟกาดาสฟหทาดทหกฟหดsafmkd
 session_start();
 ?>
 <!DOCTYPE html>

@@ -29,8 +29,8 @@
       <file leaf-file-name="Member.php" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/Member.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="695">
-              <caret line="54" column="108" lean-forward="false" selection-start-line="54" selection-start-column="108" selection-end-line="54" selection-end-column="108" />
+            <state relative-caret-position="595">
+              <caret line="35" column="45" lean-forward="false" selection-start-line="35" selection-start-column="45" selection-end-line="35" selection-end-column="45" />
               <folding />
             </state>
           </provider>
@@ -48,6 +48,7 @@
   <component name="Git.Settings">
     <option name="ROOT_SYNC" value="SYNC" />
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+    <option name="RECENT_COMMON_BRANCH" value="master" />
     <push-targets>
       <push-target-info target-remote="origin" target-branch="master" repo="$PROJECT_DIR$" source="master" />
     </push-targets>
@@ -127,6 +128,11 @@
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="settings.editor.selected.configurable" value="web-ide.project.structure" />
+  </component>
+  <component name="Push.Settings">
+    <excluded-roots>
+      <path value="$PROJECT_DIR$/../mvcProject" />
+    </excluded-roots>
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -228,7 +234,7 @@
       <workItem from="1493010295979" duration="1403000" />
       <workItem from="1493014002232" duration="937000" />
       <workItem from="1493020563053" duration="5898000" />
-      <workItem from="1493026723754" duration="7000" />
+      <workItem from="1493026723754" duration="307000" />
     </task>
     <task id="LOCAL-00001" summary="hello">
       <created>1492522354881</created>
@@ -251,11 +257,25 @@
       <option name="project" value="LOCAL" />
       <updated>1493026216924</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="hello">
+      <created>1493026747828</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1493026747828</updated>
+    </task>
+    <task id="LOCAL-00005" summary="hello">
+      <created>1493026962906</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1493026962906</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="14535000" />
+    <option name="totallyTimeSpent" value="14835000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1394" height="916" extended-state="6" />
@@ -682,8 +702,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/Member.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="695">
-          <caret line="54" column="108" lean-forward="false" selection-start-line="54" selection-start-column="108" selection-end-line="54" selection-end-column="108" />
+        <state relative-caret-position="595">
+          <caret line="35" column="45" lean-forward="false" selection-start-line="35" selection-start-column="45" selection-end-line="35" selection-end-column="45" />
           <folding />
         </state>
       </provider>

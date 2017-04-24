@@ -5,11 +5,6 @@
       <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/test.php" />
       <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/test2.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Contract.php" afterPath="$PROJECT_DIR$/Contract.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Gallery.php" afterPath="$PROJECT_DIR$/Gallery.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Manage_file.php" afterPath="$PROJECT_DIR$/Manage_file.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Member.php" afterPath="$PROJECT_DIR$/Member.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Upload.php" afterPath="$PROJECT_DIR$/Upload.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/index.php" afterPath="$PROJECT_DIR$/index.php" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -25,8 +20,8 @@
       <file leaf-file-name="index.php" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/index.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="443">
-              <caret line="50" column="21" lean-forward="false" selection-start-line="50" selection-start-column="21" selection-end-line="50" selection-end-column="21" />
+            <state relative-caret-position="544">
+              <caret line="50" column="22" lean-forward="false" selection-start-line="50" selection-start-column="22" selection-end-line="50" selection-end-column="22" />
               <folding />
             </state>
           </provider>
@@ -280,7 +275,7 @@
       <workItem from="1493010295979" duration="1403000" />
       <workItem from="1493014002232" duration="937000" />
       <workItem from="1493020563053" duration="5898000" />
-      <workItem from="1493026723754" duration="643000" />
+      <workItem from="1493026723754" duration="750000" />
     </task>
     <task id="LOCAL-00001" summary="hello">
       <created>1492522354881</created>
@@ -324,16 +319,24 @@
       <option name="project" value="LOCAL" />
       <updated>1493027069591</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="VER1">
+      <created>1493027387720</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1493027387720</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="15171000" />
+    <option name="totallyTimeSpent" value="15278000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1394" height="916" extended-state="6" />
+    <editor active="true" />
     <layout>
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.22351234" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.22351234" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -387,7 +390,8 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="hello" />
     <MESSAGE value="V1" />
-    <option name="LAST_COMMIT_MESSAGE" value="V1" />
+    <MESSAGE value="VER1" />
+    <option name="LAST_COMMIT_MESSAGE" value="VER1" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
@@ -756,8 +760,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/index.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="443">
-          <caret line="50" column="21" lean-forward="false" selection-start-line="50" selection-start-column="21" selection-end-line="50" selection-end-column="21" />
+        <state relative-caret-position="544">
+          <caret line="50" column="22" lean-forward="false" selection-start-line="50" selection-start-column="22" selection-end-line="50" selection-end-column="22" />
           <folding />
         </state>
       </provider>

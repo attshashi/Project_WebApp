@@ -1,4 +1,4 @@
-<!-- Upload //////team -->
+<!-- Upload //////////team -->
 <div class="team tab-pane fade" id="team">
     <div class="container">
         <h3>Meet Our Team</h3>

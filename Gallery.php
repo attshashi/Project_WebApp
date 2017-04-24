@@ -1,4 +1,4 @@
-<!-- Gallery -->
+<!-- Gallery ////-->
 <div class="gallery tab-pane fade" id="gallery">
     <div class="container">
         <h3>GALLERY</h3>

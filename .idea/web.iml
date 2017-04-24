@@ -5,5 +5,6 @@
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />
     <orderEntry type="module" module-name="mvcProject" />
+    <orderEntry type="module" module-name="workshop5" />
   </component>
 </module>
